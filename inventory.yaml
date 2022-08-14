@@ -1,0 +1,13 @@
+etcd_cluster:
+  hosts:
+    node-1:
+      ansible_host: 192.168.139.135
+      etcd_port: 2379
+    node-2:
+      ansible_host: 192.168.139.136
+      etcd_port: 2379
+    node-3:
+      ansible_host: 192.168.139.138
+      etcd_port: 2379
+  vars:
+    run_as: xmac

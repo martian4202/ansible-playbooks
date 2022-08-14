@@ -1,0 +1,7 @@
+- name: install etcd
+  hosts: node-1
+  remote_user: root
+  tasks:
+    - name: Echo message
+      delegate_to: 127.0.0.1
+      ansible.builtin.command: ps -ef
